@@ -1,5 +1,5 @@
 function NavBar() {
-	return <div>Navigation Bar</div>;
+	return <nav>jarod kober</nav>;
 }
 
 export default NavBar;
