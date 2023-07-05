@@ -5,7 +5,35 @@ body {
 	font-size: 1.2rem;
 }
 
+a {
+	color: #fff6e5;
+	text-decoration: none;
+}
+
 nav {
+	height: 5rem;
+}
+
+nav li {
+	float: right;
+	margin: 1rem;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: right;
+}
+
+.active {
+	text-decoration: underline;
+}
+
+.logo {
+	color: #fff6e5;
+	float: left;
 	font-family: 'Teko', sans-serif;
 	font-size: 3rem;
+	text-decoration: none;
 }

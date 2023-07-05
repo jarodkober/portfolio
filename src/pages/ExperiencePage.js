@@ -1,7 +1,12 @@
 import Table from '../components/Table';
 
 function ExperiencePage() {
-	return <Table />;
+	return (
+		<div>
+			<h1>Professional Experience</h1>
+			<Table />
+		</div>
+	);
 }
 
 export default ExperiencePage;
