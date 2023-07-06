@@ -4,7 +4,6 @@ function ExperiencePage() {
 	return (
 		<div>
 			<h1>Professional Experience</h1>
-			<Table />
 		</div>
 	);
 }
