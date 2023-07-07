@@ -4,6 +4,7 @@ import HomePage from './pages/HomePage';
 import LearningPage from './pages/LearningPage';
 import NavBar from './components/NavBar';
 import ProjectsPage from './pages/ProjectsPage';
+import Footer from './components/Footer';
 
 function App() {
 	return (
@@ -34,6 +35,7 @@ function App() {
 						></Route>
 					</Routes>
 				</div>
+				<Footer />
 			</Router>
 		</div>
 	);
