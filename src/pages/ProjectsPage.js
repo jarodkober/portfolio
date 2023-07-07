@@ -26,13 +26,15 @@ function ProjectsPage() {
 					Github
 				</a>
 			)
-		}
+		},
+		{ label: 'Technology', render: (project) => project.tech }
 	];
 
 	const data = [
 		{
 			name: 'Portfolio',
 			repository_url: 'https://github.com/jarodkober/portfolio',
+			tech: 'React, JavaScript, AWS',
 			url: 'http://jarodkober.com'
 		}
 	];
