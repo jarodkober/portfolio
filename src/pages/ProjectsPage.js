@@ -40,6 +40,7 @@ function ProjectsPage() {
 	const keyFn = (project) => {
 		return project.name;
 	};
+
 	return (
 		<div>
 			<h1>Projects</h1>
