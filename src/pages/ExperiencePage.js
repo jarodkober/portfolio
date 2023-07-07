@@ -53,6 +53,20 @@ function ExperiencePage() {
 				data={data}
 				keyFn={keyFn}
 			/>
+
+			<h2>Languages</h2>
+			<p>HTML, CSS, SCSS, JavaScript, TypeScript</p>
+
+			<h2>Frameworks &amp; Libraries</h2>
+			<p>Angular, PrimeNg, Bootstrap, jQuery, JavaScriptMVC</p>
+
+			<h2>Software & Tools</h2>
+			<p>
+				Amazon Web Services, Microsoft Azure, Adobe Analytics, Adobe
+				Target, Adobe Launch, Google Analytics, Git, Perforce, Gulp,
+				NPM, Splunk, Oracle Service Cloud, Adobe Photoshop, Adobe XD,
+				Zeplin, Imperva, Jira, Confluence, Slack
+			</p>
 		</div>
 	);
 }
