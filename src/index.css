@@ -28,6 +28,7 @@ nav ul {
 
 table {
 	border-collapse: collapse;
+	width: 100%;
 }
 
 td,
@@ -41,13 +42,24 @@ tr {
 }
 
 .active {
-	text-decoration: underline;
+	border-bottom: 1px solid;
+	padding-bottom: 3px;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1300px;
 }
 
 .logo {
+	border-bottom: none;
 	color: #fff6e5;
 	float: left;
 	font-family: 'Teko', sans-serif;
 	font-size: 3rem;
 	text-decoration: none;
+}
+
+#root {
+	padding: 0 1rem;
 }

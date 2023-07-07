@@ -9,31 +9,31 @@ function App() {
 	return (
 		<div>
 			<Router>
-				<div>
-					<NavBar />
+				<NavBar />
+				<div className="container">
+					<Routes>
+						<Route
+							exact
+							path="/"
+							element={<HomePage />}
+						></Route>
+						<Route
+							exact
+							path="/experience"
+							element={<ExperiencePage />}
+						></Route>
+						<Route
+							exact
+							path="/learning"
+							element={<LearningPage />}
+						></Route>
+						<Route
+							exact
+							path="/projects"
+							element={<ProjectsPage />}
+						></Route>
+					</Routes>
 				</div>
-				<Routes>
-					<Route
-						exact
-						path="/"
-						element={<HomePage />}
-					></Route>
-					<Route
-						exact
-						path="/experience"
-						element={<ExperiencePage />}
-					></Route>
-					<Route
-						exact
-						path="/learning"
-						element={<LearningPage />}
-					></Route>
-					<Route
-						exact
-						path="/projects"
-						element={<ProjectsPage />}
-					></Route>
-				</Routes>
 			</Router>
 		</div>
 	);
