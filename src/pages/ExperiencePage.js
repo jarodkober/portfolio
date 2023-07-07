@@ -15,34 +15,39 @@ function ExperiencePage() {
 
 	const data = [
 		{
-			title: 'Lead Web Developer',
+			id: 1,
 			company: 'Stamps.com',
-			date: 'April 2020 - October 2021'
+			date: 'April 2020 - October 2021',
+			title: 'Lead Web Developer'
 		},
 		{
-			title: 'Senior Web Developer',
+			id: 2,
 			company: 'Stamps.com',
-			date: 'April 2019 - March 2020'
+			date: 'April 2019 - March 2020',
+			title: 'Senior Web Developer'
 		},
 		{
-			title: 'Web Development Manager',
+			id: 3,
 			company: 'Stamps.com',
-			date: 'May 2014 - March 2019'
+			date: 'May 2014 - March 2019',
+			title: 'Web Development Manager'
 		},
 		{
-			title: 'Senior Web Developer',
+			id: 4,
 			company: 'Stamps.com',
-			date: 'February 2012 - May 2014'
+			date: 'February 2012 - May 2014',
+			title: 'Senior Web Developer'
 		},
 		{
-			title: 'Web Developer',
+			id: 5,
 			company: 'Stamps.com',
-			date: 'February 2008 - February 2012'
+			date: 'February 2008 - February 2012',
+			title: 'Web Developer'
 		}
 	];
 
 	const keyFn = (job) => {
-		return job.title;
+		return job.id;
 	};
 
 	return (
