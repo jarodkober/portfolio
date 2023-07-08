@@ -5,7 +5,14 @@ function Table({ config, data, keyFn }) {
 
 	const renderedRows = data.map((rowData) => {
 		const renderedCells = config.map((column) => {
-			return <td key={column.label}>{column.render(rowData)}</td>;
+			return (
+				<td
+					key={column.label}
+					data-cell={column.label}
+				>
+					{column.render(rowData)}
+				</td>
+			);
 		});
 
 		return <tr key={keyFn(rowData)}>{renderedCells}</tr>;

@@ -2,12 +2,18 @@ body {
 	background: #111;
 	color: #fff6e5;
 	font-family: 'Barlow Semi Condensed', sans-serif;
-	font-size: 1.2rem;
+	font-size: 1.25rem;
+	font-weight: 300;
+	line-height: 1.5;
 }
 
 a {
 	color: #fff6e5;
 	text-decoration: none;
+}
+
+h1 {
+	font-weight: 300;
 }
 
 nav {
@@ -37,6 +43,10 @@ th {
 	text-align: left;
 }
 
+th {
+	font-weight: 500;
+}
+
 tr {
 	border-bottom: 1px solid #fff6e5;
 }
@@ -47,8 +57,8 @@ tr {
 }
 
 .container {
-	margin: 0 auto;
-	max-width: 1300px;
+	margin-inline: auto;
+	width: min(1200px, 100% - 3rem);
 }
 
 .logo {
@@ -62,4 +72,32 @@ tr {
 
 #root {
 	padding: 0 1rem;
+}
+
+@media (max-width: 850px) {
+	th {
+		display: none;
+	}
+
+	td {
+		display: grid;
+		padding: 0.5rem;
+	}
+
+	td:first-child {
+		padding-top: 2rem;
+	}
+
+	td:last-child {
+		padding-bottom: 2rem;
+	}
+
+	td::before {
+		content: attr(data-cell) ': ';
+		font-weight: 500;
+	}
+
+	tr:first-child {
+		border-bottom: 1px solid #fff6e5;
+	}
 }
