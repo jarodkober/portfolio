@@ -150,6 +150,10 @@ nav ul a {
   Body
 */
 
+h2 ~ p {
+	padding-bottom: 2rem;
+}
+
 .container {
 	margin-inline: auto;
 	width: min(1200px, 100% - 3rem);
@@ -182,6 +186,7 @@ footer a {
 
 table {
 	border-collapse: collapse;
+	margin-bottom: 2rem;
 	width: 100%;
 }
 
