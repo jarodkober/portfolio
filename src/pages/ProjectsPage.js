@@ -45,7 +45,7 @@ function ProjectsPage() {
 
 	return (
 		<div>
-			<h1>Projects</h1>
+			<h1>Personal Projects</h1>
 			<Table
 				config={config}
 				data={data}
