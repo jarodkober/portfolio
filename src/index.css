@@ -1,40 +1,192 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+}
+
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+#root {
+	isolation: isolate;
+}
+
+/*
+  Base Styles
+*/
+
 body {
 	background: #111;
 	color: #fff6e5;
 	font-family: 'Barlow Semi Condensed', sans-serif;
 	font-size: 1.25rem;
 	font-weight: 300;
-	line-height: 1.5;
 }
 
 a {
 	color: #fff6e5;
-	text-decoration: none;
 }
 
-h1 {
+h1,
+h2 {
 	font-weight: 300;
 }
 
-nav {
-	height: 5rem;
+/*
+  Header
+*/
+
+.active {
+	border-bottom: 1px solid;
+	padding-bottom: 3px;
 }
 
-nav li {
-	float: right;
-	margin: 1rem;
+.logo {
+	font-family: 'Teko', sans-serif;
+	font-size: 3rem;
+	margin: 2rem;
+}
+
+.logo a {
+	border-bottom: none;
+	text-decoration: none;
+}
+
+header {
+	align-items: center;
+	justify-content: space-between;
+}
+
+header button {
+	display: none;
 }
 
 nav ul {
-	list-style-type: none;
+	--gap: 3rem;
+	list-style: none;
 	margin: 0;
-	padding: 0;
-	text-align: right;
+	padding: 2rem;
 }
+
+nav ul a {
+	text-decoration: none;
+}
+
+@media (max-width: 650px) {
+	header button {
+		background-color: transparent;
+		border: 0;
+		color: #fff6e5;
+		display: block;
+		font-size: 3rem;
+		position: absolute;
+		right: 2rem;
+		top: 2rem;
+		width: 5rem;
+		z-index: 9999;
+	}
+
+	nav ul {
+		--gap: clamp(1.5rem, 5vw, 3rem);
+		background: hsl(0 0% 0% / 0.9);
+		flex-direction: column;
+		inset: 0 0 0 30%;
+		padding: min(30vh, 10rem) 2em;
+		position: fixed;
+		transform: translateX(100%);
+		transition: transform 350ms ease-out;
+		z-index: 1000;
+	}
+
+	nav ul[data-visible='true'] {
+		transform: translateX(0);
+	}
+
+	@supports (backdrop-filter: blur(1rem)) {
+		nav ul {
+			backdrop-filter: blur(1rem);
+			background: hsl(0 0% 100% / 0.1);
+		}
+	}
+}
+
+/*
+  Body
+*/
+
+.container {
+	margin-inline: auto;
+	width: min(1200px, 100% - 3rem);
+}
+
+#root {
+	padding: 0 1rem;
+}
+
+/*
+  Footer
+*/
+
+footer {
+	display: flex;
+	justify-content: center;
+	padding: 2rem;
+	text-align: center;
+	width: 100%;
+}
+
+footer a {
+	font-size: 1.5rem;
+	padding-inline: 2rem;
+}
+
+/*
+  Tables
+*/
 
 table {
 	border-collapse: collapse;
 	width: 100%;
+}
+
+table a {
+	text-decoration: none;
 }
 
 td,
@@ -49,29 +201,6 @@ th {
 
 tr {
 	border-bottom: 1px solid #fff6e5;
-}
-
-.active {
-	border-bottom: 1px solid;
-	padding-bottom: 3px;
-}
-
-.container {
-	margin-inline: auto;
-	width: min(1200px, 100% - 3rem);
-}
-
-.logo {
-	border-bottom: none;
-	color: #fff6e5;
-	float: left;
-	font-family: 'Teko', sans-serif;
-	font-size: 3rem;
-	text-decoration: none;
-}
-
-#root {
-	padding: 0 1rem;
 }
 
 @media (max-width: 850px) {
@@ -100,4 +229,25 @@ tr {
 	tr:first-child {
 		border-bottom: 1px solid #fff6e5;
 	}
+}
+
+/*
+  Utility
+*/
+
+.flex {
+	display: flex;
+	gap: var(--gap, 1rem);
+}
+
+.sr-only {
+	border-width: 0;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
 }
