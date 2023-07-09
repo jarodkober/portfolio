@@ -46,14 +46,17 @@ function ExperiencePage() {
 		}
 	];
 
+	const headerId = 'experience-header';
+
 	const keyFn = (job) => {
 		return job.id;
 	};
 
 	return (
 		<div>
-			<h1>Professional Experience</h1>
+			<h1 id={headerId}>Professional Experience</h1>
 			<Table
+				ariaLabelledBy={headerId}
 				config={config}
 				data={data}
 				keyFn={keyFn}

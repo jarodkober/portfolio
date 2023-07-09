@@ -126,14 +126,17 @@ function LearningPage() {
 		}
 	];
 
+	const headerId = 'learning-header';
+
 	const keyFn = (event) => {
 		return event.title;
 	};
 
 	return (
 		<div>
-			<h1>Recent Conferences, Courses, and Workshops</h1>
+			<h1 id={headerId}>Recent Conferences, Courses, and Workshops</h1>
 			<Table
+				ariaLabelledBy={headerId}
 				config={config}
 				data={data}
 				keyFn={keyFn}

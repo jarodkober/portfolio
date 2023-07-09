@@ -39,14 +39,17 @@ function ProjectsPage() {
 		}
 	];
 
+	const headerId = 'projects-header';
+
 	const keyFn = (project) => {
 		return project.name;
 	};
 
 	return (
 		<div>
-			<h1>Personal Projects</h1>
+			<h1 id={headerId}>Personal Projects</h1>
 			<Table
+				ariaLabelledBy={headerId}
 				config={config}
 				data={data}
 				keyFn={keyFn}

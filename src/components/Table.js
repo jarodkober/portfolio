@@ -1,4 +1,4 @@
-function Table({ config, data, keyFn }) {
+function Table({ ariaLabelledBy, config, data, keyFn }) {
 	const renderedHeaders = config.map((column) => {
 		return <th key={column.label}>{column.label}</th>;
 	});
@@ -19,7 +19,7 @@ function Table({ config, data, keyFn }) {
 	});
 
 	return (
-		<table>
+		<table aria-labelledby={ariaLabelledBy}>
 			<thead>
 				<tr>{renderedHeaders}</tr>
 			</thead>
