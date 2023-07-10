@@ -1,5 +1,4 @@
 import Table from '../components/Table';
-import { BsList, BsXLg } from 'react-icons/bs';
 
 function ProjectsPage() {
 	const config = [
@@ -55,8 +54,6 @@ function ProjectsPage() {
 				data={data}
 				keyFn={keyFn}
 			/>
-			<BsXLg />
-			<BsList />
 		</div>
 	);
 }
