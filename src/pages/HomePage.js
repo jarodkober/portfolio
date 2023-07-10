@@ -10,9 +10,9 @@ function HomePage() {
 			<p>
 				I'm currently seeking a new opportunity as a
 				front-of-the-front-end specialist, delivering expertise in HTML,
-				CSS, and presentational JavaScript to create UIs that are
-				performant, responsive, accessible, flexible, and scalable.
-				Design systems anyone?
+				CSS, and presentational JavaScript to create user interfaces
+				that are performant, responsive, accessible, flexible, and
+				scalable. Design systems anyone?
 			</p>
 		</div>
 	);
