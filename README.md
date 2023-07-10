@@ -12,7 +12,7 @@ The project is currently in development. Much of the content is in place, but th
 
 This project uses `node 18.16.0` and `npm 9.6.6`.
 
-Clone this respository and run:
+Clone the repository and run the following command from the project directory:
 
 #### `npm install`
 
