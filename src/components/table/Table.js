@@ -1,3 +1,5 @@
+import styles from './Table.module.scss';
+
 function Table({ ariaLabelledBy, config, data, keyFn }) {
 	const renderedHeaders = config.map((column) => {
 		return <th key={column.label}>{column.label}</th>;
@@ -19,7 +21,10 @@ function Table({ ariaLabelledBy, config, data, keyFn }) {
 	});
 
 	return (
-		<table aria-labelledby={ariaLabelledBy}>
+		<table
+			aria-labelledby={ariaLabelledBy}
+			className={styles.table}
+		>
 			<thead>
 				<tr>{renderedHeaders}</tr>
 			</thead>

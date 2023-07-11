@@ -1,0 +1,54 @@
+@import '../../styles/variables.scss';
+
+.table {
+	border-collapse: collapse;
+	margin-bottom: 2rem;
+	width: 100%;
+
+	a {
+		text-decoration: none;
+	}
+
+	td,
+	th {
+		padding: 1.5rem;
+		text-align: left;
+	}
+
+	th {
+		font-weight: $font-weight-bold;
+	}
+
+	tr {
+		border-bottom: 1px solid;
+		border-color: $old-lace;
+	}
+}
+
+@media (max-width: 850px) {
+	th {
+		display: none;
+	}
+
+	td {
+		display: grid;
+		padding: 0.5rem;
+	}
+
+	td:first-child {
+		padding-top: 2rem;
+	}
+
+	td:last-child {
+		padding-bottom: 2rem;
+	}
+
+	td::before {
+		content: attr(data-cell) ': ';
+		font-weight: $font-weight-bold;
+	}
+
+	tr:first-child {
+		border-bottom: 1px solid #fff6e5;
+	}
+}
