@@ -2,7 +2,7 @@
 
 .table {
 	border-collapse: collapse;
-	margin-bottom: 2rem;
+	margin-bottom: 3.2rem;
 	width: 100%;
 
 	a {
@@ -11,7 +11,7 @@
 
 	td,
 	th {
-		padding: 1.5rem;
+		padding: 2.4rem;
 		text-align: left;
 	}
 
@@ -32,15 +32,15 @@
 
 	td {
 		display: grid;
-		padding: 0.5rem;
+		padding: 0.8rem;
 	}
 
 	td:first-child {
-		padding-top: 2rem;
+		padding-top: 3.2rem;
 	}
 
 	td:last-child {
-		padding-bottom: 2rem;
+		padding-bottom: 3.2rem;
 	}
 
 	td::before {
