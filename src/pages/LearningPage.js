@@ -19,7 +19,7 @@ function LearningPage() {
 		{ label: 'Platform', render: (event) => event.platform },
 		{ label: 'Event Type', render: (event) => event.type },
 		{
-			label: 'Date Completed',
+			label: 'Date',
 			render: (event) =>
 				event.verification_url ? (
 					<a

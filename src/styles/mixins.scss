@@ -36,3 +36,18 @@
 		@content;
 	}
 }
+
+/// Viewport MD (medium) minimum and above
+/// @example scss
+/// 	.generic-class {
+///			// generic base styles
+///			@include md-min {
+///				// md min styles
+///			}
+///		}
+@mixin md-min {
+	@media #{$mq-md-min} {
+		// Viewport MD (medium) minimum and up
+		@content;
+	}
+}
