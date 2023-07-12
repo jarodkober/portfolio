@@ -17,10 +17,13 @@ $bg-color-primary: $chinese-black;
 
 /// RESPONSIVE BREAKPOINTS
 /// Chosen based on content for this project, not standard device dimensions
+$screen-sm-min: 650px;
 $screen-md-min: 850px;
 $screen-lg-min: 1200px;
+$screen-xs-max: ($screen-sm-min - 1);
 $screen-sm-max: ($screen-md-min - 1);
 $screen-md-max: ($screen-lg-min - 1);
 
 /// MEDIA QUERIES
+$mq-xs-max: 'only screen and (max-width:#{$screen-xs-max})';
 $mq-sm-max: 'only screen and (max-width:#{$screen-sm-max})';

@@ -15,9 +15,24 @@
 ///				// xs max styles
 ///			}
 ///		}
+@mixin xs-max {
+	@media #{$mq-xs-max} {
+		// Viewport xs (extra small) max and below
+		@content;
+	}
+}
+
+/// Viewport SM (small) max and below
+/// @example scss
+/// 	.generic-class {
+///			// generic base styles
+///			@include sm-max {
+///				// sm max styles
+///			}
+///		}
 @mixin sm-max {
 	@media #{$mq-sm-max} {
-		// Viewport xs (extra small) max and below
+		// Viewport SM (small) max and below
 		@content;
 	}
 }

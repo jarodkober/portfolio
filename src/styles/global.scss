@@ -24,12 +24,12 @@ a {
 	color: $text-color-primary;
 }
 
-/*
-  Body
-*/
-
 h2 ~ p {
-	padding-bottom: 3.2rem;
+	margin-bottom: 3.2rem;
+}
+
+p + p {
+	margin-top: 2rem;
 }
 
 .container {
