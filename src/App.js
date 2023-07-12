@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ExperiencePage from './pages/ExperiencePage';
 import HomePage from './pages/HomePage';
 import LearningPage from './pages/LearningPage';
-import NavBar from './components/NavBar';
+import Header from './components/header/Header';
 import ProjectsPage from './pages/ProjectsPage';
 import Footer from './components/footer/Footer';
 
@@ -10,7 +10,7 @@ function App() {
 	return (
 		<div>
 			<Router>
-				<NavBar />
+				<Header />
 				<div className="container">
 					<Routes>
 						<Route

@@ -1,0 +1,23 @@
+@import './variables.scss';
+
+///
+/// SASS MIXIINS
+///
+
+/// RESPSONSIVE MEDIA QUERIES
+/// Used to house specific styling for different resolutions
+
+/// Viewport XS (extra small) max and below
+/// @example scss
+/// 	.generic-class {
+///			// generic base styles
+///			@include xs-max {
+///				// xs max styles
+///			}
+///		}
+@mixin sm-max {
+	@media #{$mq-sm-max} {
+		// Viewport xs (extra small) max and below
+		@content;
+	}
+}

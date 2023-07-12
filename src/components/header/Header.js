@@ -1,13 +1,14 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { BsList, BsXLg } from 'react-icons/bs';
+import styles from './Header.module.scss';
 
-function NavBar() {
+function Header() {
 	const [showMobileNavMenu, setshowMobileNavMenu] = useState(false);
 
 	return (
-		<header className="flex">
-			<div className="logo">
+		<header className={`flex ${styles.header}`}>
+			<div className={styles.logo}>
 				<NavLink to="/">jarod kober</NavLink>
 			</div>
 
@@ -67,4 +68,4 @@ function NavBar() {
 	);
 }
 
-export default NavBar;
+export default Header;

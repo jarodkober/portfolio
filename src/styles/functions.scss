@@ -26,8 +26,8 @@
 @function fluid(
 	$min-size,
 	$max-size,
-	$min-breakpoint: $bp-default-min,
-	$max-breakpoint: $bp-default-max,
+	$min-breakpoint: $screen-md-min,
+	$max-breakpoint: $screen-md-max,
 	$unit: vw
 ) {
 	$slope: math.div($max-size - $min-size, $max-breakpoint - $min-breakpoint);
