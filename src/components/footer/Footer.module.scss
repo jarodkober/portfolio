@@ -1,0 +1,14 @@
+@import '../../styles/functions.scss';
+
+.footer {
+	display: flex;
+	justify-content: center;
+	padding: 3.2rem;
+	text-align: center;
+	width: 100%;
+
+	a {
+		font-size: #{fluid(24px, 30px)};
+		padding-inline: 3.2rem;
+	}
+}

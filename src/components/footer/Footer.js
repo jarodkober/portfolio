@@ -1,3 +1,4 @@
+import styles from './Footer.module.scss';
 import { BsEnvelope, BsGithub, BsLinkedin } from 'react-icons/bs';
 
 function Footer() {
@@ -10,7 +11,7 @@ function Footer() {
 	};
 
 	return (
-		<footer>
+		<footer className={styles.footer}>
 			<a
 				href="obfuscated"
 				id="contact"

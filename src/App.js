@@ -4,7 +4,7 @@ import HomePage from './pages/HomePage';
 import LearningPage from './pages/LearningPage';
 import NavBar from './components/NavBar';
 import ProjectsPage from './pages/ProjectsPage';
-import Footer from './components/Footer';
+import Footer from './components/footer/Footer';
 
 function App() {
 	return (
