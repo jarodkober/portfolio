@@ -1,3 +1,4 @@
+import Heading from '../components/heading/Heading';
 import Table from '../components/table/Table';
 
 function LearningPage() {
@@ -134,7 +135,12 @@ function LearningPage() {
 
 	return (
 		<div>
-			<h1 id={headerId}>Recent Conferences, Courses, and Workshops</h1>
+			<Heading
+				id={headerId}
+				level="h1"
+			>
+				Recent Conferences, Courses, and Workshops
+			</Heading>
 			<Table
 				ariaLabelledBy={headerId}
 				config={config}

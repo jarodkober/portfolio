@@ -1,0 +1,9 @@
+@import '../../styles/functions.scss';
+
+.h1 {
+	font-size: #{fluid(32px, 40px)};
+}
+
+.h2 {
+	font-size: #{fluid(24px, 32px)};
+}

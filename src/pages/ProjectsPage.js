@@ -1,3 +1,4 @@
+import Heading from '../components/heading/Heading';
 import Table from '../components/table/Table';
 
 function ProjectsPage() {
@@ -47,7 +48,12 @@ function ProjectsPage() {
 
 	return (
 		<div>
-			<h1 id={headerId}>Personal Projects</h1>
+			<Heading
+				id={headerId}
+				level="h1"
+			>
+				Personal Projects
+			</Heading>
 			<Table
 				ariaLabelledBy={headerId}
 				config={config}

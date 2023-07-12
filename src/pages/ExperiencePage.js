@@ -1,3 +1,4 @@
+import Heading from '../components/heading/Heading';
 import Table from '../components/table/Table';
 
 function ExperiencePage() {
@@ -54,7 +55,12 @@ function ExperiencePage() {
 
 	return (
 		<div>
-			<h1 id={headerId}>Professional Experience</h1>
+			<Heading
+				id={headerId}
+				level="h1"
+			>
+				Professional Experience
+			</Heading>
 			<Table
 				ariaLabelledBy={headerId}
 				config={config}
@@ -62,13 +68,13 @@ function ExperiencePage() {
 				keyFn={keyFn}
 			/>
 
-			<h2>Languages</h2>
+			<Heading level="h2">Languages</Heading>
 			<p>HTML, CSS, SCSS, JavaScript, TypeScript</p>
 
-			<h2>Frameworks &amp; Libraries</h2>
+			<Heading level="h2">Frameworks &amp; Libraries</Heading>
 			<p>Angular, PrimeNg, Bootstrap, jQuery, JavaScriptMVC</p>
 
-			<h2>Software & Tools</h2>
+			<Heading level="h2">Software & Tools</Heading>
 			<p>
 				Amazon Web Services, Microsoft Azure, Adobe Analytics, Adobe
 				Target, Adobe Launch, Google Analytics, Git, Perforce, Gulp,
