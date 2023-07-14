@@ -3,7 +3,10 @@
 
 .header {
 	align-items: center;
+	background-color: $bg-color-primary;
 	justify-content: space-between;
+	position: sticky;
+	top: 0;
 
 	.logo {
 		font-family: 'Teko', sans-serif;
