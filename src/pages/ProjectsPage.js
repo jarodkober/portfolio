@@ -12,6 +12,10 @@ function ProjectsPage() {
 					rel="noreferrer"
 					target="_blank"
 				>
+					<span
+						aria-hidden="true"
+						data-content={project.url}
+					></span>
 					{project.url}
 				</a>
 			)
@@ -24,6 +28,10 @@ function ProjectsPage() {
 					rel="noreferrer"
 					target="_blank"
 				>
+					<span
+						aria-hidden="true"
+						data-content="Github"
+					></span>
 					Github
 				</a>
 			)

@@ -11,6 +11,10 @@ function LearningPage() {
 					rel="noreferrer"
 					target="_blank"
 				>
+					<span
+						aria-hidden="true"
+						data-content={event.title}
+					></span>
 					{event.title}
 				</a>
 			)
@@ -27,6 +31,10 @@ function LearningPage() {
 						rel="noreferrer"
 						target="_blank"
 					>
+						<span
+							aria-hidden="true"
+							data-content={event.date_completed}
+						></span>
 						{event.date_completed}
 					</a>
 				) : (
