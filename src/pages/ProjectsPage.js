@@ -43,8 +43,8 @@ function ProjectsPage() {
 		{
 			name: 'Portfolio',
 			repository_url: 'https://github.com/jarodkober/portfolio',
-			tech: 'React, JavaScript, AWS',
-			url: 'http://jarodkober.com'
+			tech: 'React, JavaScript, SASS, AWS',
+			url: 'https://jarodkober.com'
 		}
 	];
 
