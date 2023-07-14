@@ -3,9 +3,9 @@
 @import './variables.scss';
 @import './functions.scss';
 
-/*
-  Base Styles
-*/
+///
+/// GLOBAL STYLES
+///
 
 html {
 	font-size: 62.5%;
@@ -41,9 +41,7 @@ p + p {
 	padding: 0 1.6rem;
 }
 
-/*
-  Utility
-*/
+/// UTILITIES
 
 .flex {
 	display: flex;
