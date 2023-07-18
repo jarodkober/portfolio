@@ -1,0 +1,38 @@
+@import '../../styles/variables.scss';
+
+.themeToggle {
+	input {
+		opacity: 0;
+		position: absolute;
+
+		&:not(:checked) + label span {
+			transform: translateX(2.4rem);
+		}
+	}
+
+	label {
+		align-items: center;
+		background-color: $text-color-primary;
+		border-radius: 5rem;
+		color: $bg-color-primary;
+		cursor: pointer;
+		display: flex;
+		font-size: 1.8rem;
+		height: 2.6rem;
+		justify-content: space-between;
+		padding: 0.5rem;
+		position: relative;
+		width: 5rem;
+	}
+
+	span {
+		background-color: $bg-color-primary;
+		border-radius: 50%;
+		height: 2.2rem;
+		left: 0.2rem;
+		position: absolute;
+		top: 0.2rem;
+		transition: transform 0.2s linear;
+		width: 2.2rem;
+	}
+}

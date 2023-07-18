@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { BsList, BsXLg } from 'react-icons/bs';
 import styles from './Header.module.scss';
+import ThemeToggle from '../theme-toggle/ThemeToggle';
 
 function Header() {
 	const [showMobileNavMenu, setshowMobileNavMenu] = useState(false);
@@ -61,6 +62,9 @@ function Header() {
 						>
 							Projects
 						</NavLink>
+					</li>
+					<li>
+						<ThemeToggle />
 					</li>
 				</ul>
 			</nav>

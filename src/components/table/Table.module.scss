@@ -93,3 +93,9 @@
 		}
 	}
 }
+
+:global(.light) .table span::before {
+	color: $link-color-light-theme;
+	filter: invert(85%);
+	opacity: 1;
+}
