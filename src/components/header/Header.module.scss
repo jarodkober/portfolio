@@ -51,7 +51,7 @@
 			padding: min(30vh, 16rem) 2em;
 			position: fixed;
 			transform: translateX(100%);
-			transition: transform 350ms ease-out;
+			transition: transform 500ms ease-out;
 			z-index: 1000;
 
 			@supports (backdrop-filter: blur(1.6rem)) {
