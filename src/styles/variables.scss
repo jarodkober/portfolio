@@ -34,4 +34,5 @@ $mq-sm-max: 'only screen and (max-width:#{$screen-sm-max})';
 $mq-md-min: 'only screen and (min-width:#{$screen-md-min})';
 
 // ANIMATIONS
-$transition-duration: 300ms;
+$transition-duration-primary: 300ms;
+$transition-duration-theme: 3000ms;

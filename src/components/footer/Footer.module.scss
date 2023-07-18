@@ -11,7 +11,7 @@
 	a {
 		font-size: #{fluid(24px, 30px)};
 		padding-inline: 3.2rem;
-		transition: all $transition-duration ease-in-out;
+		transition: all $transition-duration-primary ease-in-out;
 
 		&:hover {
 			transform: scale(1.25);

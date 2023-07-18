@@ -11,8 +11,13 @@ html {
 	font-size: 62.5%;
 	height: 100%;
 
+	&.dark {
+		transition: $transition-duration-theme;
+	}
+
 	&.light {
 		filter: invert(85%);
+		transition: $transition-duration-theme;
 	}
 
 	body {

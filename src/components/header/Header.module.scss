@@ -75,7 +75,7 @@
 			a {
 				position: relative;
 				text-decoration: none;
-				transition: color $transition-duration ease-in-out;
+				transition: color $transition-duration-primary ease-in-out;
 
 				&:global.active {
 					cursor: default;
@@ -91,7 +91,8 @@
 						position: absolute;
 						top: 100%;
 						transform: scaleX(0);
-						transition: transform $transition-duration ease-in-out;
+						transition: transform $transition-duration-primary
+							ease-in-out;
 						width: 100%;
 					}
 
