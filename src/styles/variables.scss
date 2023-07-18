@@ -30,3 +30,6 @@ $screen-md-max: ($screen-lg-min - 1);
 $mq-xs-max: 'only screen and (max-width:#{$screen-xs-max})';
 $mq-sm-max: 'only screen and (max-width:#{$screen-sm-max})';
 $mq-md-min: 'only screen and (min-width:#{$screen-md-min})';
+
+// ANIMATIONS
+$transition-duration: 300ms;

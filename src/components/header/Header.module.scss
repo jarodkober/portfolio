@@ -64,19 +64,39 @@
 			}
 		}
 
-		a {
-			text-decoration: none;
-
-			&:global.active {
-				border-bottom: 1px solid;
-				padding-bottom: 3px;
-			}
-		}
-
 		li {
 			@include xs-max {
 				font-size: 3rem;
 				padding-block: 1.5rem;
+			}
+
+			a {
+				position: relative;
+				text-decoration: none;
+				transition: color $transition-duration ease-in-out;
+
+				&:global.active {
+					cursor: default;
+					font-weight: $font-weight-bold;
+				}
+
+				&:not(:global(.active)) {
+					&::before {
+						background-color: $text-color-primary;
+						content: '';
+						height: 1px;
+						margin-top: 3px;
+						position: absolute;
+						top: 100%;
+						transform: scaleX(0);
+						transition: transform $transition-duration ease-in-out;
+						width: 100%;
+					}
+
+					&:hover::before {
+						transform: scaleX(1);
+					}
+				}
 			}
 		}
 	}
