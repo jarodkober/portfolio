@@ -7,47 +7,48 @@
 /// GLOBAL STYLES
 ///
 
-html,
-body {
-	height: 100%;
-}
-
 html {
 	font-size: 62.5%;
-}
+	height: 100%;
 
-body {
-	background: $bg-color-primary;
-	color: $text-color-primary;
-	font-family: $font-default;
-	font-size: #{fluid(18px, 20px)};
-	font-weight: $font-weight-normal;
-	line-height: 1.5;
-}
+	&.light-mode {
+		filter: invert(85%);
+	}
 
-a {
-	color: $text-color-primary;
-}
+	body {
+		background: $bg-color-primary;
+		color: $text-color-primary;
+		font-family: $font-default;
+		font-size: #{fluid(18px, 20px)};
+		font-weight: $font-weight-normal;
+		height: 100%;
+		line-height: 1.5;
 
-h2 ~ p {
-	margin-bottom: 3.2rem;
-}
+		#root {
+			display: flex;
+			flex-direction: column;
+			min-height: 100%;
+			padding: 0 1.6rem;
 
-p + p {
-	margin-top: 2rem;
-}
+			a {
+				color: $text-color-primary;
+			}
 
-.container {
-	flex: 1;
-	margin-inline: auto;
-	width: min(1200px, 100% - 4.8rem);
-}
+			.container {
+				flex: 1;
+				margin-inline: auto;
+				width: min(1200px, 100% - 4.8rem);
 
-#root {
-	display: flex;
-	flex-direction: column;
-	min-height: 100%;
-	padding: 0 1.6rem;
+				h2 ~ p {
+					margin-bottom: 3.2rem;
+				}
+
+				p + p {
+					margin-top: 2rem;
+				}
+			}
+		}
+	}
 }
 
 /// UTILITIES
