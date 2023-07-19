@@ -1,6 +1,8 @@
+import Panel from '../components/panel/Panel';
+
 function HomePage() {
 	return (
-		<div>
+		<Panel>
 			<p>
 				Hello! I&rsquo;m Jarod Kober, a web developer specializing in
 				front end development, with 14 years experience building and
@@ -14,7 +16,7 @@ function HomePage() {
 				that are performant, responsive, accessible, flexible, and
 				scalable. Design systems anyone?
 			</p>
-		</div>
+		</Panel>
 	);
 }
 
