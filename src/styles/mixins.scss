@@ -37,6 +37,21 @@
 	}
 }
 
+/// Viewport SM (small) minimum and above
+/// @example scss
+/// 	.generic-class {
+///			// generic base styles
+///			@include sm-min {
+///				// sm min styles
+///			}
+///		}
+@mixin sm-min {
+	@media #{$mq-sm-min} {
+		// Viewport SM (small) minimum and up
+		@content;
+	}
+}
+
 /// Viewport MD (medium) minimum and above
 /// @example scss
 /// 	.generic-class {

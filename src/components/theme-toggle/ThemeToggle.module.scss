@@ -1,4 +1,5 @@
 @import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
 
 .themeToggle {
 	input {
@@ -6,7 +7,11 @@
 		position: absolute;
 
 		&:not(:checked) + label span {
-			transform: translateX(2.4rem);
+			transform: translateX(4.8rem);
+
+			@include sm-min {
+				transform: translateX(2.4rem);
+			}
 		}
 	}
 
@@ -17,22 +22,36 @@
 		color: $bg-color-primary;
 		cursor: pointer;
 		display: flex;
-		font-size: 1.8rem;
-		height: 2.6rem;
+		font-size: 3.6rem;
+		height: 5.2rem;
 		justify-content: space-between;
-		padding: 0.5rem;
+		padding: 1rem;
 		position: relative;
-		width: 5rem;
+		width: 10rem;
+
+		@include sm-min {
+			font-size: 1.8rem;
+			height: 2.6rem;
+			padding: 0.5rem;
+			width: 5rem;
+		}
 	}
 
 	span {
 		background-color: $bg-color-primary;
 		border-radius: 50%;
-		height: 2.2rem;
-		left: 0.2rem;
+		height: 4.4rem;
+		left: 0.4rem;
 		position: absolute;
-		top: 0.2rem;
+		top: 0.4rem;
 		transition: transform 0.2s linear;
-		width: 2.2rem;
+		width: 4.4rem;
+
+		@include sm-min {
+			height: 2.2rem;
+			left: 0.2rem;
+			top: 0.2rem;
+			width: 2.2rem;
+		}
 	}
 }
