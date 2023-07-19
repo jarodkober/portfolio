@@ -2,6 +2,7 @@
 
 .h1 {
 	font-size: #{fluid(32px, 40px)};
+	text-wrap: balance;
 }
 
 .h2 {
