@@ -86,10 +86,10 @@
 	}
 
 	tr {
-		border-bottom: 1px solid $text-color-primary;
+		border-bottom: 1px solid $border-color-primary;
 
 		@include sm-max {
-			border-top: 1px solid $text-color-primary;
+			border-top: 1px solid $border-color-primary;
 		}
 	}
 }
