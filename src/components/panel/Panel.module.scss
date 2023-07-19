@@ -1,0 +1,31 @@
+@import '../../styles/variables.scss';
+@import '../../styles/functions.scss';
+@import '../../styles/mixins.scss';
+
+.panel {
+	animation-duration: 750ms;
+	animation-name: animate-panel;
+	animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
+	background: rgba($rifle-green, 0.5);
+	border: 1px solid rgba($text-color-primary, 0.25);
+	border-radius: 2rem;
+	font-size: #{fluid(19px, 24px)};
+	margin: 2.7rem auto;
+	padding: 4rem;
+
+	@keyframes animate-panel {
+		0% {
+			opacity: 0;
+			transform: scale(0.5, 0.5);
+		}
+
+		100% {
+			opacity: 1;
+			transform: scale(1, 1);
+		}
+	}
+
+	@include md-min {
+		max-width: 80%;
+	}
+}
