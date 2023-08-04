@@ -6,7 +6,7 @@ This project is the personal portfolio site for Jarod Kober.
 
 ## Project Status
 
-The project is currently in development. Much of the content is in place, but there are several styling improvements to come.
+The project is currently in development. Much of the content is in place, but there are still some enhancements and minor features to come.
 
 ## Installation and Setup Instructions
 
