@@ -46,19 +46,21 @@ function LearningPage() {
 	const data = [
 		{
 			date_completed: 'In Progress',
-			url: 'https://www.udemy.com/course/react-redux/',
-			platform: 'Udemy',
-			presenter: 'Stephen Grider',
-			title: 'Modern React with Redux [2023 Update]',
-			type: 'Online Course'
-		},
-		{
-			date_completed: 'In Progress',
 			url: 'https://www.pluralsight.com/cloud-guru/courses/aws-certified-solutions-architect-associate-saa-c03',
 			platform: 'A Cloud Guru',
 			presenter: 'Ryan Kroonenburg',
 			title: 'AWS Certified Solutions Architect - Associate (SAA-C03)',
 			type: 'Online Course'
+		},
+		{
+			date_completed: 'August 2023',
+			url: 'https://www.udemy.com/course/react-redux/',
+			platform: 'Udemy',
+			presenter: 'Stephen Grider',
+			title: 'Modern React with Redux [2023 Update]',
+			type: 'Online Course',
+			verification_url:
+				'https://www.udemy.com/certificate/UC-fcf70991-1028-4ac6-85f3-22dec55039fc/'
 		},
 		{
 			date_completed: 'April 2022',
