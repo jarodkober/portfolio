@@ -54,6 +54,14 @@ function LearningPage() {
 		},
 		{
 			date_completed: 'August 2023',
+			url: 'https://designsystem.university/courses/how-to-use-a-design-system-in-code',
+			platform: 'Design System University',
+			presenter: 'Dan Mall',
+			title: 'How to Use a Design System in Code',
+			type: 'Online Course'
+		},
+		{
+			date_completed: 'August 2023',
 			url: 'https://www.udemy.com/course/react-redux/',
 			platform: 'Udemy',
 			presenter: 'Stephen Grider',
