@@ -6,19 +6,22 @@ function ProjectsPage() {
 		{ label: 'Name', render: (project) => project.name },
 		{
 			label: 'URL',
-			render: (project) => (
-				<a
-					href={project.url}
-					rel="noreferrer"
-					target="_blank"
-				>
-					<span
-						aria-hidden="true"
-						data-content={project.url}
-					></span>
-					{project.url}
-				</a>
-			)
+			render: (project) =>
+				project.url ? (
+					<a
+						href={project.url}
+						rel="noreferrer"
+						target="_blank"
+					>
+						<span
+							aria-hidden="true"
+							data-content={project.url}
+						></span>
+						{project.url}
+					</a>
+				) : (
+					'TBD'
+				)
 		},
 		{
 			label: 'Repository',
@@ -45,6 +48,11 @@ function ProjectsPage() {
 			repository_url: 'https://github.com/jarodkober/portfolio',
 			tech: 'React, JavaScript, SASS, AWS',
 			url: 'https://jarodkober.com'
+		},
+		{
+			name: 'Beer Inventory',
+			repository_url: 'https://github.com/jarodkober/beer',
+			tech: 'React, Redux, Redux Toolkit Query, Vite, PrimeReact, JavaScript'
 		}
 	];
 
