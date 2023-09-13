@@ -20,7 +20,7 @@ function ThemeToggle() {
 				onClick={toggleTheme}
 				type="checkbox"
 			/>
-			<label for="checkbox">
+			<label htmlFor="checkbox">
 				<BsMoonFill />
 				<BsSunFill />
 				<span></span>
