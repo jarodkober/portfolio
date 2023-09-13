@@ -1,44 +1,75 @@
+import { useState } from 'react';
+import imageCertDsu from '../assets/cert_dsu_20230825.png';
 import Heading from '../components/heading/Heading';
+import Modal from '../components/modal/Modal';
 import Table from '../components/table/Table';
 
 function LearningPage() {
+	const [showModal, setShowModal] = useState({
+		show: false,
+		imagePath: null
+	});
+
+	const handleClick = (event) => {
+		event.preventDefault();
+
+		setShowModal({
+			show: true,
+			imagePath: event.currentTarget.href
+		});
+	};
+
+	const handleClose = () => {
+		setShowModal({ show: false, imagePath: null });
+	};
+
+	const modal = (
+		<Modal onClose={handleClose}>
+			<img
+				alt="Course verification certificate"
+				src={showModal.imagePath}
+			/>
+		</Modal>
+	);
+
 	const config = [
 		{
 			label: 'Name',
-			render: (event) => (
+			render: (course) => (
 				<a
-					href={event.url}
+					href={course.url}
 					rel="noreferrer"
 					target="_blank"
 				>
 					<span
 						aria-hidden="true"
-						data-content={event.title}
+						data-content={course.title}
 					></span>
-					{event.title}
+					{course.title}
 				</a>
 			)
 		},
-		{ label: 'Presenter', render: (event) => event.presenter },
-		{ label: 'Platform', render: (event) => event.platform },
-		{ label: 'Event Type', render: (event) => event.type },
+		{ label: 'Presenter', render: (course) => course.presenter },
+		{ label: 'Platform', render: (course) => course.platform },
+		{ label: 'Event Type', render: (course) => course.type },
 		{
 			label: 'Date',
-			render: (event) =>
-				event.verification_url ? (
+			render: (course) =>
+				course.verification_url ? (
 					<a
-						href={event.verification_url}
+						href={course.verification_url}
+						onClick={course.verification_modal && handleClick}
 						rel="noreferrer"
 						target="_blank"
 					>
 						<span
 							aria-hidden="true"
-							data-content={event.date_completed}
+							data-content={course.date_completed}
 						></span>
-						{event.date_completed}
+						{course.date_completed}
 					</a>
 				) : (
-					event.date_completed
+					course.date_completed
 				)
 		}
 	];
@@ -58,7 +89,9 @@ function LearningPage() {
 			platform: 'Design System University',
 			presenter: 'Dan Mall',
 			title: 'How to Use a Design System in Code',
-			type: 'Online Course'
+			type: 'Online Course',
+			verification_modal: true,
+			verification_url: imageCertDsu
 		},
 		{
 			date_completed: 'August 2023',
@@ -165,6 +198,7 @@ function LearningPage() {
 				data={data}
 				keyFn={keyFn}
 			/>
+			{showModal.show && modal}
 		</div>
 	);
 }
