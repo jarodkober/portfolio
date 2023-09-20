@@ -5,7 +5,7 @@ import styles from './Header.module.scss';
 import ThemeToggle from '../theme-toggle/ThemeToggle';
 
 function Header() {
-	const [showMobileNavMenu, setshowMobileNavMenu] = useState(false);
+	const [showMobileNavMenu, setShowMobileNavMenu] = useState(false);
 
 	return (
 		<header className={`flex ${styles.header}`}>
@@ -17,7 +17,7 @@ function Header() {
 				aria-controls="navigation-menu"
 				aria-expanded={showMobileNavMenu}
 				onClick={() => {
-					setshowMobileNavMenu(!showMobileNavMenu);
+					setShowMobileNavMenu(!showMobileNavMenu);
 				}}
 			>
 				<span className="sr-only">Menu</span>
@@ -34,7 +34,7 @@ function Header() {
 						<NavLink
 							onClick={() => {
 								showMobileNavMenu &&
-									setshowMobileNavMenu(false);
+									setShowMobileNavMenu(false);
 							}}
 							to="/experience"
 						>
@@ -45,7 +45,7 @@ function Header() {
 						<NavLink
 							onClick={() => {
 								showMobileNavMenu &&
-									setshowMobileNavMenu(false);
+									setShowMobileNavMenu(false);
 							}}
 							to="/learning"
 						>
@@ -56,7 +56,7 @@ function Header() {
 						<NavLink
 							onClick={() => {
 								showMobileNavMenu &&
-									setshowMobileNavMenu(false);
+									setShowMobileNavMenu(false);
 							}}
 							to="/projects"
 						>
