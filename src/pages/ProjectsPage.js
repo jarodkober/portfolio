@@ -20,7 +20,7 @@ function ProjectsPage() {
 						{project.url}
 					</a>
 				) : (
-					'TBD'
+					'Coming Soon!'
 				)
 		},
 		{
@@ -33,9 +33,9 @@ function ProjectsPage() {
 				>
 					<span
 						aria-hidden="true"
-						data-content="Github"
+						data-content="GitHub"
 					></span>
-					Github
+					GitHub
 				</a>
 			)
 		},
@@ -46,13 +46,13 @@ function ProjectsPage() {
 		{
 			name: 'Portfolio',
 			repository_url: 'https://github.com/jarodkober/portfolio',
-			tech: 'React, JavaScript, SASS, AWS',
+			tech: 'React, JavaScript, SASS, CSS Modules, Webpack, AWS: Amplify, Route 53',
 			url: 'https://jarodkober.com'
 		},
 		{
-			name: 'Beer Inventory',
-			repository_url: 'https://github.com/jarodkober/beer',
-			tech: 'React, Redux, Redux Toolkit Query, Vite, PrimeReact, JavaScript'
+			name: 'My Beer Fridge',
+			repository_url: 'https://github.com/jarodkober/my-beer-fridge',
+			tech: 'React, JavaScript, SASS, CSS Modules, PrimeReact, Redux, Redux Toolkit Query, PostgreSQL, Vite, AWS: Amplify, API Gateway, Aurora, Cognito, IAM, Lambda, RDS, Route 53'
 		}
 	];
 
