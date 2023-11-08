@@ -52,7 +52,8 @@ function ProjectsPage() {
 		{
 			name: 'My Beer Fridge',
 			repository_url: 'https://github.com/jarodkober/my-beer-fridge',
-			tech: 'React, JavaScript, SASS, CSS Modules, PrimeReact, Redux, Redux Toolkit Query, PostgreSQL, Vite, AWS: Amplify, API Gateway, Aurora, Cloudwatch, Cognito, IAM, Lambda, RDS, Route 53'
+			tech: 'React, JavaScript, SASS, CSS Modules, PrimeReact, Redux, Redux Toolkit Query, PostgreSQL, Vite, AWS: Amplify, API Gateway, Aurora, Cloudwatch, Cognito, IAM, Lambda, RDS, Route 53',
+			url: 'https://mybeerfridge.com'
 		}
 	];
 
