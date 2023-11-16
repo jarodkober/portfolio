@@ -34,9 +34,9 @@ $mq-sm-max: 'only screen and (max-width:#{$screen-sm-max})';
 $mq-sm-min: 'only screen and (min-width:#{$screen-sm-min})';
 $mq-md-min: 'only screen and (min-width:#{$screen-md-min})';
 
-// ANIMATIONS
+/// ANIMATIONS
 $transition-duration-primary: 300ms;
 $transition-duration-theme: 3000ms;
 
-// BORDERS
+/// BORDERS
 $border-color-primary: $old-lace;
