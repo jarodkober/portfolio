@@ -58,11 +58,6 @@ html {
 
 /// UTILITIES
 
-.flex {
-	display: flex;
-	gap: var(--gap, 1.6rem);
-}
-
 .sr-only {
 	border-width: 0;
 	clip: rect(0, 0, 0, 0);

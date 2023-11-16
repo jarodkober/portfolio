@@ -8,7 +8,7 @@ function Header() {
 	const [showMobileNavMenu, setShowMobileNavMenu] = useState(false);
 
 	return (
-		<header className={`flex ${styles.header}`}>
+		<header className={styles.header}>
 			<div className={styles.logo}>
 				<NavLink to="/">jarod kober</NavLink>
 			</div>
@@ -26,7 +26,6 @@ function Header() {
 
 			<nav>
 				<ul
-					className="flex"
 					data-visible={showMobileNavMenu}
 					id="navigation-menu"
 				>
