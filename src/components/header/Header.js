@@ -26,7 +26,7 @@ function Header() {
 
 			<nav>
 				<ul
-					data-visible={showMobileNavMenu}
+					data-mobile-nav-visible={showMobileNavMenu}
 					id="navigation-menu"
 				>
 					<li>

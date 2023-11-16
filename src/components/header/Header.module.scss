@@ -63,7 +63,7 @@
 				background: hsl(0 0% 100% / 0.1);
 			}
 
-			&[data-visible='true'] {
+			&[data-mobile-nav-visible='true'] {
 				transform: translateX(0);
 			}
 		}
